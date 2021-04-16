@@ -1,0 +1,102 @@
+apiVersion: v1
+entries:
+  astronomer:
+  - apiVersion: v2
+    appVersion: 0.23.12
+    created: "2021-04-17T01:27:27.2709651+05:30"
+    dependencies:
+    - condition: global.astronomerEnabled
+      name: astronomer
+      repository: ""
+      tags:
+      - platform
+    - condition: global.nginxEnabled
+      name: nginx
+      repository: ""
+      tags:
+      - platform
+    - condition: global.grafanaEnabled
+      name: grafana
+      repository: ""
+      tags:
+      - monitoring
+    - condition: global.prometheusEnabled
+      name: prometheus
+      repository: ""
+      tags:
+      - monitoring
+    - condition: global.prometheusPostgresExporterEnabled
+      name: prometheus-postgres-exporter
+      repository: ""
+      tags:
+      - monitoring
+    - condition: global.alertmanagerEnabled
+      name: alertmanager
+      repository: ""
+      tags:
+      - monitoring
+    - condition: global.kubeStateEnabled
+      name: kube-state
+      repository: ""
+      tags:
+      - monitoring
+    - condition: global.nodeExporterEnabled
+      name: prometheus-node-exporter
+      repository: ""
+      tags:
+      - monitoring
+    - condition: global.blackboxExporterEnabled
+      name: prometheus-blackbox-exporter
+      repository: ""
+      tags:
+      - monitoring
+    - condition: global.elasticsearchEnabled
+      name: elasticsearch
+      repository: ""
+      tags:
+      - logging
+    - condition: global.kibanaEnabled
+      name: kibana
+      repository: ""
+      tags:
+      - logging
+    - condition: global.fluentdEnabled
+      name: fluentd
+      repository: ""
+      tags:
+      - logging
+    - condition: global.kubedEnabled
+      name: kubed
+      repository: ""
+      tags:
+      - kubed
+    - condition: global.postgresqlEnabled
+      name: postgresql
+      repository: ""
+      tags:
+      - postgresql
+    - condition: global.kedaEnabled
+      name: keda
+      repository: ""
+      tags:
+      - keda
+    - condition: global.nats.enabled
+      name: nats
+      repository: ""
+      tags:
+      - nats
+    - condition: global.stan.enabled
+      name: stan
+      repository: ""
+      tags:
+      - stan
+    description: Helm chart to deploy the Astronomer Platform
+    digest: 1d6ddd8cfce01ab55066c8f697bc69a3880645962cd0cb918e6506e89bb69405
+    icon: https://www.astronomer.io/static/iconforLIGHTbackground.svg
+    keywords:
+    - astronomer
+    name: astronomer
+    urls:
+    - https://pritt20.github.io/redhat_helm_chats/astronomer-0.23.12.tgz
+    version: 0.23.12
+generated: "2021-04-17T01:27:27.2453542+05:30"
