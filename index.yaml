@@ -2,8 +2,26 @@ apiVersion: v1
 entries:
   airflow:
   - apiVersion: v1
+    appVersion: 2.0.0
+    created: "2022-01-22T21:28:53.133555+05:30"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: '@stable'
+      version: 6.3.12
+    description: Helm chart to deploy the Astronomer Platform Airflow module
+    digest: 7b4932b0b63b02c7322e349746454ead76b6f512200c73f99d55b321a35f3ca7
+    icon: https://airflow.apache.org/docs/apache-airflow/stable/_images/pin_large.png
+    keywords:
+    - astronomer
+    - airflow
+    name: airflow
+    urls:
+    - https://pritt20.github.io/redhat_helm_chats/airflow-0.19.0.tgz
+    version: 0.19.0
+  - apiVersion: v1
     appVersion: 1.10.10
-    created: "2021-04-17T01:36:20.1202062+05:30"
+    created: "2022-01-22T21:28:53.129114+05:30"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -21,7 +39,7 @@ entries:
   astronomer:
   - apiVersion: v2
     appVersion: 0.23.12
-    created: "2021-04-17T01:36:20.1479054+05:30"
+    created: "2022-01-22T21:28:53.147975+05:30"
     dependencies:
     - condition: global.astronomerEnabled
       name: astronomer
@@ -117,4 +135,4 @@ entries:
     urls:
     - https://pritt20.github.io/redhat_helm_chats/astronomer-0.23.12.tgz
     version: 0.23.12
-generated: "2021-04-17T01:36:20.1107038+05:30"
+generated: "2022-01-22T21:28:53.125192+05:30"
